@@ -1,0 +1,220 @@
+  body {
+    margin: 0px;
+  }
+
+  .maintenance {
+    background-color: rgb(229, 223, 223);
+  }
+
+  .site-maintenance {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: oblique;
+  }
+
+  .header {
+    align-items: center;
+    /* vertical alignment */
+    border-color: rgb(71, 4, 4);
+    border-width: 2px;
+    /* border-style: solid; */
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .sb {
+    margin-left: 10px;
+    font-style: italic
+  }
+
+  .login-fc {
+    display: flex;
+  }
+
+  .signup-login-btn {
+    background-color: rgb(132, 4, 4);
+    border: none;
+    border-radius: 3px;
+    border-width: 1px;
+    color: white;
+    cursor: pointer;
+    /* height: 45px;
+    width: 100px; */
+    padding: 10px;
+    margin-right: 8px;
+    /*margin represents spacing on outside of the element*/
+    transition: opacity 1s, color 1s;
+    /*If we want to change 
+    the opacity slowly on hover we use transition property*/
+  }
+
+  /*hover and active are pseudo classes*/
+  .signup-login-btn:hover {
+    opacity: 0.4;
+    /* It tells the HTML element how it would 
+    be or it will fade out the element*/
+  }
+
+  .signup-login-btn:active {
+    background-color: grey;
+    color: black;
+    opacity: 0.4;
+  }
+
+  .fc {
+    background-color: rgb(132, 4, 4);
+    border: none;
+    border-radius: 3px;
+    border-width: 1px;
+    color: white;
+    cursor: pointer;
+    /* height: 45px;
+    width: 100px; */
+    padding: 10px;
+    margin-right: 10px;
+  }
+
+  .fc:hover {
+    opacity: 0.4;
+    /* It tells the HTML element how it would 
+    be or it will fade out the element*/
+  }
+
+  .fc:active {
+    background-color: grey;
+    color: black;
+    opacity: 0.4;
+  }
+
+  .banner-slide {
+    display: flex;
+    overflow-x: auto;
+    /* Enables horizontal scroll if content overflows */
+    scroll-snap-type: x mandatory;
+    /* Smooth scrolling behavior */
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    width: 100%;
+  }
+
+  .slide {
+    flex: 0 0 100%;   /* Each slide takes full width */
+    scroll-snap-align: start;
+  }
+
+  /* .slide img {
+    width: 100%;
+    display: block;
+  } */
+
+  .prev,.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .subscribe-newsletter {
+    background-color: rgb(92, 92, 92);
+    display: flex;
+    padding: 30px;
+    justify-content: space-around;
+  }
+
+  p {
+    color: white;
+  }
+
+  .email {
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-image: initial;
+    border-bottom: 1px solid;
+
+  }
+
+  .send-btn {
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 10px 19px;
+    color: white;
+    margin-left: 5px;
+  }
+
+  .google-btn {
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px 19px;
+    margin-right: 5px;
+  }
+
+  .apple-btn {
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    padding: 10px 19px;
+  }
+
+  .footer {
+    display: flex;
+    background-color: gray;
+  }
+
+  .footer-headings {
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 34px;
+  }
+
+  li {
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 4px;
+    color: white;
+    cursor: pointer;
+    transition: opacity 0.5s, color 1s;
+  }
+
+  li:hover {
+    color: rgb(200, 84, 161);
+    opacity: 0.4;
+  }
